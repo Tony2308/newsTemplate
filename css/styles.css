@@ -1,0 +1,554 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', Arial, Helvetica;
+    margin: 0;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+}
+/* --------------------Large screens styling ----------------------------*/
+body{
+        /* background-color: #525252; */
+        background: #E0E0E0 url('../img/image1.png') repeat;
+        color: #525252;
+
+        }
+
+    header{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        vertical-align: baseline;
+        font-size: 100%;
+    } 
+
+    .logo{
+       
+        line-height: 3em;
+    }
+    .logo h1{
+        display: block;
+        font-size: 100%;
+        width: 100%;
+        height: auto;
+        padding: 1em 0 0 0 ;
+        font-size: 3.25em;
+    }
+
+    .logo a{
+        align-self: flex-end;
+        text-decoration: none;
+        color:#474747;
+        text-transform: none;
+        
+        font-weight: bold;
+        text-shadow: 1px 1px 0px #FFFFFF;
+        letter-spacing: -0.025em;
+        }
+
+
+    /* styling toggle menu section */
+    .menu{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        /* margin-bottom: 0; */
+        /* height: auto; */
+        width: 90vw;
+        background-color: #181818;
+        border-radius: 8px 8px 0 0;
+        transition: 0.7s;
+        
+    }
+
+    .menu li{
+        display: inline-block;
+        padding: 0em 3em;
+        margin: 0;
+        font-size: 1em;
+        line-height: 3em;
+        color: #fff;
+        list-style-type: none;
+        text-transform: capitalize;
+        cursor: pointer;
+        outline: 0;
+        text-align: center;
+        }
+
+    .menu li:hover {
+        background-color: teal;
+        transition: .4s;
+        }
+
+    #toggle, .show-menu, .hide-menu, .search{
+        display: none;
+        }
+
+    section.page{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        padding-bottom: 3em;
+        background-color: #fff;
+        color: #525252;
+
+    }
+
+section.page div.container{
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+
+}
+
+/* first section */
+    section.page.one div.container{
+        width: 90vw;
+        margin-right: auto;
+        margin-left: auto;
+        height: 400px;
+    }
+
+    section.page div.container img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* second section */
+    section.page.two div.container div.card-wrapper{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+        flex-flow: row;
+
+    }
+
+    section.page.two div.container div.card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 23%;
+        height: auto;
+        justify-content: space-around;
+        color: #fff;
+        margin-right:auto;
+        margin-left: auto;
+        background-color: #333333;
+        box-sizing: inherit;
+        border-radius: 5px;
+        padding-top: 0em;
+    }
+
+    section.page.two div.container div.card-wrapper div.card h2{
+        background-color: #181818;
+        color: inherit;
+        width: 100%;
+        height: auto;
+        margin:0em;
+        padding: 1em 0.6em;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 1.35em;
+        text-transform: capitalize;
+        border-radius: 5px 5px 0 0;
+    }
+
+    section.page.two div.container div.card-wrapper div.content p{
+        width: 100%;
+        height: auto;
+        color: #838383;
+        background-color: #333333;
+        line-height: 170%;
+        padding: 0.5em 0.6em;
+       
+
+    }
+    section.page.two div.container div.card-wrapper div.card span{
+       width: 100%;
+       height: auto;
+        cursor: pointer;
+        background-color: #333333;
+        padding: 0.5em 0.6em 1.5em;
+        text-align: center;
+       
+
+    }
+
+    section.page.two div.container div.card-wrapper div.card button{
+        background-color: teal;
+        cursor: pointer; 
+        padding: 0.5em 0.6em;
+        text-align: center;
+        box-shadow:teal;
+        border: unset;
+
+    }
+
+    section.page.two div.container div.card-wrapper div.card button:hover{
+        background-color: crimson;
+        transition: .3s;
+      
+    }
+
+
+/* Third section */
+section.page.three div.container div.card-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section.page.three div.container div.card{
+    width: 100%;
+    height: auto;
+    
+ 
+}
+/* styling card one row three */
+section.page.three div.container div.card-wrapper div.card.col1{
+    width: 20%;
+    height: auto;
+   
+ 
+}
+/* styling card two row three */
+section.page.three div.container div.card-wrapper div.card.col2{
+    width: 60%;
+    height: auto;
+   
+ 
+}
+section.page.three div.container div.card-wrapper div.card.col2 h2{
+    line-height: 1.05em;
+    font-size: 2.25em;
+   
+ 
+}
+
+section.page.three div.container div.card-wrapper div.card.col2 img{
+    width: 100%;
+    height: 250px;
+   
+ 
+}
+
+section.page.three div.container div.card-wrapper div.card.col2 p{
+    width: 100%;
+    line-height: 1.75em;
+    font-size: 1.15em;
+    padding-top: 3em;
+   
+ 
+}
+
+section.page.three div.container div.card-wrapper div.card.col2 button{
+    width: auto;
+    line-height: 1.75em;
+    font-size: 1.35em;
+    margin-top: 3em;
+    padding:0.75em 1em;
+    color: #181818;
+    background-color: teal;
+    cursor: pointer;
+    border: unset;
+    border-radius: 5px;
+}
+
+section.page.three div.container div.card-wrapper div.card.col2 button:hover{
+    transition: .3s;
+    background-color: crimson;
+}
+
+/* styling card three row three */
+section.page.three div.container div.card-wrapper div.card.col3{
+    width: 20%;
+    height: auto;
+    color:#181818;
+    margin-left:2.5em;
+ 
+}
+section.page.three div.container div.card-wrapper div.card.col3 li{
+    width: 100%;
+    height: auto;
+    color:#181818;
+    text-align: left;
+    list-style-position: outside;
+    margin-bottom: 3em;
+ 
+}
+
+
+
+section.page.three div.container div.card-wrapper div.card h2{
+    background-color: inherit;
+    color: inherit;
+    width: 100%;
+    height: auto;
+    margin:0em;
+    padding: 1em 0.6em;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.35em;
+    text-transform: capitalize;
+    border-radius: 5px 5px 0 0;
+}
+
+section.page.three div.container div.card-wrapper div.content {
+    width: 100%;
+    height: auto;
+    color: #181818;
+    line-height: 170%;
+    padding: 0.5em 0.6em;
+
+}
+
+
+section.page.three div.container div.card-wrapper div.card div.sidebar-top{
+    
+    padding: 1em 0.8em;
+  
+}
+
+section.page.three div.container div.card-wrapper div.card div.sidebar-top ul{
+    border-bottom: none;
+    padding: 1em 0.8em;
+    
+  
+}
+
+section.page.three div.container div.card-wrapper div.card div.sidebar-top li{
+    border-bottom: 1px solid #838383;
+    padding: 0.25em 0.25em;
+    color:#525252;
+    list-style-type: disc;
+    list-style-position: outside;
+    font-size: 0.75em;
+    line-height: 170%;
+}
+
+section.page.three div.container div.card-wrapper div.card div.sidebar-bottom{
+    padding-top: 4em;
+    padding: 1em 0.8em;
+    color:#525252
+  
+}
+
+section.page.three div.container div.card-wrapper div.card div.sidebar-bottom ul{
+    border-bottom: none;
+    padding: 1em 0.8em;
+    
+  
+}
+
+section.page.three div.container div.card-wrapper div.card div.sidebar-bottom li{
+    font-size: 0.75em;
+    padding: 0.25em 0.25em;
+    border-bottom: 1px solid #838383;
+    list-style-position: outside;
+  
+}
+
+section.page.three div.container div.card-wrapper div.card li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    transition: .3s;
+  
+}
+
+
+
+
+
+
+
+    /* fooetr stylings */
+    footer{
+        width: 100%;  
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: #777777;
+
+        }
+
+   
+
+    footer p{
+    text-align: left; 
+    color:inherit;
+    line-height: 170%;
+        }
+
+        footer section.page.four{
+            padding: 3em 3em;
+            background-color: unset;
+            border-bottom: 1px solid #3f3f3f;
+        }
+
+        footer section.page.four div.container div.card-wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        footer section.page.four div.container div.card-wrapper div.card{
+           width:20%;
+            margin-right: auto;
+            margin-left: auto;
+            justify-content: space-between;
+        }
+        footer section.page.four div.container div.card-wrapper div.card h2{
+            line-height: 2em;
+            font-weight: lighter;
+            font-size: 1.5em;
+            color: inherit;
+         }
+
+         footer section.page.four div.container div.card-wrapper div.card div.content p{
+            line-height: 1.45em;
+            font-weight: lighter;
+            font-size: 0.95em;
+            text-align: left;
+            color: inherit;
+         }
+
+         footer .copyright{
+             width: 100%;
+             font-size: 0.8em;
+             line-height: 2em;
+             text-align: center;
+             padding: 2em;
+         }
+
+/* -------------small screens first------------------ */
+
+@media screen and (max-width:680px){
+    /* Header */
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        vertical-align: baseline;
+        font-size: 100%;
+        z-index: 0;
+        background-color: black;
+     
+    } 
+
+    .logo h1{
+        font-size: 100%;
+        width: auto;
+        height: auto;
+        padding: 1em 0 0 0 ;
+        float: right;
+    }
+
+    .logo a{
+        align-self: flex-end;
+        text-decoration: none;
+        color:#474747;
+        text-transform: none;
+        font-size: 1.25em;
+        font-weight: bold;
+        text-shadow: 1px 1px 0px #FFFFFF;
+        letter-spacing: -0.025em;
+        text-decoration: none;
+        }
+
+
+
+    /* styling toggle menu section */
+    .menu{
+        position: fixed;
+        transition: 0.7s;
+        padding: 3em 0;
+        margin: 0;
+        height: 100%;
+        left: -100%;
+        top: 0;
+        width: 60%;
+        background-color: #181818;
+        min-width: auto;
+        z-index: 0;
+
+    }
+
+    .menu li{
+        display: block;
+        color: #fff;
+        font-size: medium;
+        width: 100%;
+        }
+
+    .menu li:hover {
+        background-color: teal;
+        transition: .4s;
+        }
+
+    .show-menu i{
+        float: left;
+    }
+
+   .show-menu, .hide-menu{
+        display: block;
+        }
+
+     #toggle:checked ~ .menu{
+         left: 0;
+     }
+
+     .logo h1{
+        font-size: 100%;
+        height: auto;
+        padding: 1em 0 0 0 ;
+        font-size: 1.25em;
+    }
+
+    .logo a{
+        align-self: flex-end;
+        text-decoration: none;
+        color:#FFFFFF;
+        text-transform: none;
+       
+        font-weight: bold;
+        text-shadow: 1px 1px 0px #FFFFFF;
+        letter-spacing: -0.025em;
+        }
+
+
+        /* fooetr stylings */
+    footer{
+        width: 100%;  
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        }
+
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
