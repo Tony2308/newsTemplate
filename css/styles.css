@@ -431,7 +431,7 @@ section.page.three div.container div.card-wrapper div.card li:hover{
 
 /* -------------small screens first------------------ */
 
-@media screen and (max-width:680px){
+@media screen and (max-width:780px){
     /* Header */
     header{
         width: 100%;
@@ -442,30 +442,35 @@ section.page.three div.container div.card-wrapper div.card li:hover{
         font-size: 100%;
         z-index: 0;
         background-color: black;
+        height: 80px;
+        padding: 0em 2em;
+        position: fixed;
      
     } 
 
     .logo h1{
         font-size: 100%;
         width: auto;
-        height: auto;
-        padding: 1em 0 0 0 ;
+        line-height:3em;
         float: right;
     }
 
-    .logo a{
+    header.logo a{
         align-self: flex-end;
         text-decoration: none;
         color:#474747;
         text-transform: none;
-        font-size: 1.25em;
-        font-weight: bold;
+        font-size: 0.95em;
+        font-weight: normal;
         text-shadow: 1px 1px 0px #FFFFFF;
-        letter-spacing: -0.025em;
+        letter-spacing: 0.25em;
         text-decoration: none;
         }
 
-
+    .show-menu i{
+        color: white;
+        line-height: 3em;
+    }
 
     /* styling toggle menu section */
     .menu{
@@ -506,24 +511,132 @@ section.page.three div.container div.card-wrapper div.card li:hover{
      #toggle:checked ~ .menu{
          left: 0;
      }
+    /* section part */
 
-     .logo h1{
-        font-size: 100%;
+     section.page div.container{
+        width: 100%;
+        margin-right: none;
+        margin-left: none;
         height: auto;
-        padding: 1em 0 0 0 ;
-        font-size: 1.25em;
+    
+    }
+    
+    /* first section */
+        section.page.one div.container{
+            width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+            height: 300px;
+        }
+    
+        section.page div.container img{
+            width: 100%;
+            height: 100%;
+        }
+
+
+ /* second section */
+    section.page.two div.container div.card-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+        flex-flow: column;
+        padding: 1em 0em;
+
     }
 
-    .logo a{
-        align-self: flex-end;
-        text-decoration: none;
-        color:#FFFFFF;
-        text-transform: none;
+    section.page.two div.container div.card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+        justify-content: space-around;
+        color: #fff;
+        margin: 0.75em 0;
+        margin-right:auto;
+        margin-left: auto;
+        background-color: #333333;
+        box-sizing: inherit;
+        padding-top: 0em;
+    }
+
+    section.page.two div.container div.card-wrapper div.card h2{
+        background-color: #181818;
+        color: inherit;
+        width: 100%;
+        height: auto;
+        margin:0em;
+        padding: 1em 0.6em;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 1.35em;
+        text-transform: capitalize;
+        border-radius: 5px 5px 0 0;
+    }
+
+    section.page.two div.container div.card-wrapper div.content p{
+        width: 100%;
+        height: auto;
+        color: #838383;
+        background-color: #333333;
+        line-height: 170%;
+        padding: 0.5em 0.6em;
        
-        font-weight: bold;
-        text-shadow: 1px 1px 0px #FFFFFF;
-        letter-spacing: -0.025em;
-        }
+
+    }
+    section.page.two div.container div.card-wrapper div.card span{
+       width: 100%;
+       height: auto;
+        cursor: pointer;
+        background-color: #333333;
+        padding: 0.5em 0.6em 1.5em;
+        text-align: center;
+       
+
+    }
+
+    section.page.two div.container div.card-wrapper div.card button{
+        background-color: teal;
+        cursor: pointer; 
+        padding: 0.5em 0.6em;
+        text-align: center;
+        box-shadow:teal;
+        border: unset;
+
+    }
+
+    section.page.two div.container div.card-wrapper div.card button:hover{
+        background-color: crimson;
+        transition: .3s;
+      
+    }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         /* fooetr stylings */
