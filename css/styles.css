@@ -365,10 +365,6 @@ section.page.three div.container div.card-wrapper div.card li:hover{
 
 
 
-
-
-
-
     /* fooetr stylings */
     footer{
         width: 100%;  
@@ -381,7 +377,6 @@ section.page.three div.container div.card-wrapper div.card li:hover{
         }
 
    
-
     footer p{
     text-align: left; 
     color:inherit;
@@ -434,54 +429,55 @@ section.page.three div.container div.card-wrapper div.card li:hover{
 @media screen and (max-width:780px){
     /* Header */
     header{
-        width: 100%;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        vertical-align: baseline;
-        font-size: 100%;
-        z-index: 0;
-        background-color: black;
-        height: 80px;
-        padding: 0em 2em;
-        position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    vertical-align: baseline;
+    font-size: 100%;
+    z-index: 0;
+    background-color: black;
+    height: 80px;
+    padding: 0em 2em;
+    position: fixed;
+    align-items: center;
      
     } 
 
     .logo h1{
         font-size: 100%;
-        width: auto;
-        line-height:3em;
+        width: 80%;
         float: right;
     }
 
-    header.logo a{
-        align-self: flex-end;
-        text-decoration: none;
-        color:#474747;
-        text-transform: none;
-        font-size: 0.95em;
-        font-weight: normal;
-        text-shadow: 1px 1px 0px #FFFFFF;
-        letter-spacing: 0.25em;
-        text-decoration: none;
-        }
+    .logo a{
+    /* align-self: flex-end; */
+    text-decoration: none;
+    color:#fff;
+    text-transform: none;
+    font-size: 0.75em;
+    font-weight: normal;
+    text-shadow: 1px 1px 0px #FFFFFF;
+    letter-spacing: 0.025em;
+    text-decoration: none;
+    }
 
     .show-menu i{
-        color: white;
-        line-height: 3em;
+
+      
+
     }
 
     /* styling toggle menu section */
     .menu{
         position: fixed;
         transition: 0.7s;
-        padding: 3em 0;
+        padding: 2em 0em;
         margin: 0;
         height: 100%;
         left: -100%;
-        top: 0;
-        width: 60%;
+        top: 80px;
+        width: 70%;
         background-color: #181818;
         min-width: auto;
         z-index: 0;
@@ -489,10 +485,12 @@ section.page.three div.container div.card-wrapper div.card li:hover{
     }
 
     .menu li{
-        display: block;
+        display: inline-block;
         color: #fff;
         font-size: medium;
         width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #fff;
         }
 
     .menu li:hover {
@@ -502,6 +500,7 @@ section.page.three div.container div.card-wrapper div.card li:hover{
 
     .show-menu i{
         float: left;
+        color: #fff;
     }
 
    .show-menu, .hide-menu{
@@ -519,23 +518,23 @@ section.page.three div.container div.card-wrapper div.card li:hover{
         margin-left: none;
         height: auto;
     
+        }
+        
+        /* first section */
+    section.page.one div.container {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        height: 300px;
     }
-    
-    /* first section */
-        section.page.one div.container{
-            width: 100%;
-            margin-right: 0;
-            margin-left: 0;
-            height: 300px;
-        }
-    
-        section.page div.container img{
-            width: 100%;
-            height: 100%;
-        }
+
+    section.page div.container img{
+        width: 100%;
+        height: 100%;
+    }
 
 
- /* second section */
+    /* second section */
     section.page.two div.container div.card-wrapper{
         display: flex;
         flex-direction: column;
@@ -547,110 +546,300 @@ section.page.three div.container div.card-wrapper div.card li:hover{
 
     }
 
-    section.page.two div.container div.card{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 100%;
-        height: auto;
-        justify-content: space-around;
-        color: #fff;
-        margin: 0.75em 0;
-        margin-right:auto;
-        margin-left: auto;
-        background-color: #333333;
-        box-sizing: inherit;
-        padding-top: 0em;
-    }
+section.page.two div.container div.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    color: #fff;
+    margin: 0.75em 0;
+    margin-right:auto;
+    margin-left: auto;
+    background-color: #333333;
+    box-sizing: inherit;
+    padding-top: 0em;
+}
 
-    section.page.two div.container div.card-wrapper div.card h2{
-        background-color: #181818;
-        color: inherit;
-        width: 100%;
-        height: auto;
-        margin:0em;
-        padding: 1em 0.6em;
-        text-align: center;
-        font-weight: lighter;
-        font-size: 1.35em;
-        text-transform: capitalize;
-        border-radius: 5px 5px 0 0;
-    }
+section.page.two div.container div.card-wrapper div.card h2{
+    background-color: #181818;
+    color: inherit;
+    width: 100%;
+    height: auto;
+    margin:0em;
+    padding: 1em 0.6em;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.35em;
+    text-transform: capitalize;
+    border-radius: 5px 5px 0 0;
+}
 
-    section.page.two div.container div.card-wrapper div.content p{
-        width: 100%;
-        height: auto;
-        color: #838383;
-        background-color: #333333;
-        line-height: 170%;
-        padding: 0.5em 0.6em;
-       
+section.page.two div.container div.card-wrapper div.content p{
+    width: 100%;
+    height: auto;
+    color: #838383;
+    background-color: #333333;
+    line-height: 170%;
+    padding: 0.5em 0.6em;
+    
+}
 
-    }
-    section.page.two div.container div.card-wrapper div.card span{
-       width: 100%;
-       height: auto;
-        cursor: pointer;
-        background-color: #333333;
-        padding: 0.5em 0.6em 1.5em;
-        text-align: center;
-       
+section.page.two div.container div.card-wrapper div.card span{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    background-color: #333333;
+    padding: 0.5em 0.6em 1.5em;
+    text-align: center;
 
-    }
+}
 
-    section.page.two div.container div.card-wrapper div.card button{
-        background-color: teal;
-        cursor: pointer; 
-        padding: 0.5em 0.6em;
-        text-align: center;
-        box-shadow:teal;
-        border: unset;
+section.page.two div.container div.card-wrapper div.card button{
+    background-color: teal;
+    cursor: pointer; 
+    padding: 0.5em 0.6em;
+    text-align: center;
+    box-shadow:teal;
+    border: unset;
 
-    }
+}
 
-    section.page.two div.container div.card-wrapper div.card button:hover{
-        background-color: crimson;
-        transition: .3s;
-      
-    }
+section.page.two div.container div.card-wrapper div.card button:hover{
+    background-color: crimson;
+    transition: .3s;
+    
+}
    
 
+/* -----------Third section ---------------------------------------------------*/
+section.page.three div.container div.card-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+section.page.three div.container div.card{
+    width: 100%;
+    height: auto;
+    
+ 
+}
+/* styling card one row three */
+section.page.three div.container div.card-wrapper div.card.col1{
+    width: 100%;
+    height: auto;
+   
+ 
+}
+/* styling card two row three */
+section.page.three div.container div.card-wrapper div.card.col2{
+    width: 100%;
+    height: auto;
+   
+ 
+}
+section.page.three div.container div.card-wrapper div.card.col2 h2{
+    line-height: 1.05em;
+    font-size: 1.25em;
+   
+ 
+}
+
+section.page.three div.container div.card-wrapper div.card.col2 img{
+    width: 100%;
+    height: 250px;
+   
+ 
+}
+
+section.page.three div.container div.card-wrapper div.card.col2 p{
+    width: 100%;
+    line-height: 1.75em;
+    font-size: 1.05em;
+    padding-top: 3em;
+    /* initial-letter:4 ; */
+   
+ 
+}
+
+section.page.three div.container div.card-wrapper div.card.col2 button{
+    width: auto;
+    line-height: 0.75em;
+    font-size: .95em;
+    margin-top: 3em;
+    padding:0.75em 1em;
+    color: #fff;
+    background-color: teal;
+    cursor: pointer;
+    border: unset;
+    border-radius: unset;
+}
+
+/* styling card three row three */
+section.page.three div.container div.card-wrapper div.card.col3{
+    width: 100%;
+    height: auto;
+    color:#181818;
+    margin-left:0em;
+ 
+}
+section.page.three div.container div.card-wrapper div.card.col3 li{
+    width: 100%;
+    height: auto;
+    color:#181818;
+    text-align: left;
+    list-style-position: outside;
+    margin-bottom: 3em;
+ 
+}
+
+section.page.three div.container div.card-wrapper div.card h2{
+    background-color: inherit;
+    color: inherit;
+    width: 100%;
+    height: auto;
+    margin:0em;
+    padding: 1em 0.6em;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.35em;
+    text-transform: capitalize;
+    border-radius: 5px 5px 0 0;
+}
+
+section.page.three div.container div.card-wrapper div.content {
+    width: 100%;
+    height: auto;
+    color: #181818;
+    line-height: 170%;
+    padding: 0.5em 0.6em;
+
+}
 
 
+section.page.three div.container div.card-wrapper div.card div.sidebar-top{
+    
+    padding: 1em 0.8em;
+  
+}
+
+section.page.three div.container div.card-wrapper div.card div.sidebar-top ul{
+    border-bottom: none;
+    padding: 1em 0.8em;
+    
+  
+}
+
+section.page.three div.container div.card-wrapper div.card div.sidebar-top li{
+    border-bottom: 1px solid #838383;
+    padding: 0.45em 0.25em;
+    color:#525252;
+    list-style-position: outside;
+    font-size: 0.95em;
+    line-height: 170%;
+}
+
+section.page.three div.container div.card-wrapper div.card div.sidebar-bottom{
+    padding-top: 4em;
+    padding: 1em 0.8em;
+    color:#525252
+  
+}
+
+section.page.three div.container div.card-wrapper div.card div.sidebar-bottom ul{
+    border-bottom: none;
+    padding: 1em .9em;
+    
+  
+}
+
+section.page.three div.container div.card-wrapper div.card div.sidebar-bottom li{
+    font-size: 0.95em;
+    padding: 0.75em 0.15em;
+    border-bottom: 1px solid #838383;
+    list-style-position: outside;
+  
+}
+
+/* fooetr stylings */
+footer{
+    width: 100%;  
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #777777;
+
+    }
 
 
+    footer p{
+    text-align: left; 
+    color:inherit;
+    line-height: 170%;
+        }
 
+    footer section.page.four{
+        padding: 1em 1em;
+        background-color: unset;
+        border-bottom: 1px solid #3f3f3f;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* fooetr stylings */
-    footer{
-        width: 100%;  
-        height: 30vh;
+    footer section.page.four div.container div.card-wrapper{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        }
+        justify-content: space-between;
+    }
+
+    footer section.page.four div.container div.card-wrapper div.card{
+       width:100%;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: space-between;
+        padding: 1em 0em; 
+    }
+
+    footer section.page.four div.container div.card-wrapper div.card img{
+        width:300px;
+        height: 200px;
+        margin-top: 1em;
+        margin-bottom:1.5em ;
+         
+     }
+
+    footer section.page.four div.container div.card-wrapper div.card h2{
+        line-height: 2em;
+        font-weight: lighter;
+        font-size: 1.05em;
+        color: inherit;
+     }
+
+     footer section.page.four div.container div.card-wrapper div.card div.content p{
+        line-height: 1.45em;
+        font-weight: lighter;
+        font-size: 0.65em;
+        text-align: left;
+        color: inherit;
+     }
+
+     footer .copyright{
+         width: 100%;
+         font-size: 0.8em;
+         line-height: 2em;
+         text-align: center;
+         padding: 2em;
+     }
 
    
 
 }
+
+
+
 
 
 
