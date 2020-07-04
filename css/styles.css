@@ -573,7 +573,7 @@ section.page.two div.container div.card-wrapper div.card h2{
     font-weight: lighter;
     font-size: 1.35em;
     text-transform: capitalize;
-   
+    border-radius: unset;
 }
 
 section.page.two div.container div.card-wrapper div.content p{
@@ -708,7 +708,7 @@ section.page.three div.container div.card-wrapper div.card h2{
     font-weight: lighter;
     font-size: 1.35em;
     text-transform: capitalize;
-  
+    border-radius: unset;
 }
 
 section.page.three div.container div.card-wrapper div.content {
